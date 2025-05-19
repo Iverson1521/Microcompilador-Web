@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microcompilador Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Microcompilador Web</h1>
+  </header>
+  <div class="editor-container">
+    <div class="buttons">
+      <button onclick="nuevoArchivo()">Nuevo Archivo</button>
+      <button onclick="abrirArchivo()">Abrir Archivo</button>
+      <button onclick="eliminarArchivo()">Eliminar Archivo</button>
+      <button onclick="verTokens()">Ver Tokens</button>
+      <button onclick="compilar()">Compilar</button>
+      <button onclick="ejecutar()">Ejecutar</button>
+      <button onclick="descargarArchivo()">Descargar</button>
+      <button onclick="verDocumentacion()">Ver/Descargar Documentación</button>
+    </div>
+    <textarea id="editor"></textarea>
+  </div>
+  <div id="output"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+  <script src="updated_main.js"></script>
+</body>
+</html>
